@@ -1,0 +1,29 @@
+<h2>Halaman {{halaman}}</h2>
+
+<a href="data/add">tambah</a>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rows in data %}
+            <tr>
+                <td>{{ rows.id }}</td>
+                <td>{{ rows.nama }}</td>
+                <td>{{ rows.jenkel }}</td>
+                <td>{{ rows.alamat }}</td>
+                <td> 
+                    <a href="data/upd/{{ rows.id }}">ubah</a>
+                    <a href="data/dell/{{ rows.id }}">hapus</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

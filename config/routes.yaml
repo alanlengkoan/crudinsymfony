@@ -1,0 +1,35 @@
+# index:
+#    path: /
+#    controller: App\Controller\HelloController::index
+
+tentang:
+   path: /tentang
+   controller: App\Controller\HelloController::tentang
+
+kontak:
+   path: /kontak
+   controller: App\Controller\HelloController::kontak
+
+detail:
+   path: /detail/{id}
+   controller: App\Controller\HelloController::detail
+
+data:
+   path: /
+   controller: App\Controller\DataController::index
+
+add:
+   path: /data/add
+   controller: App\Controller\DataController::add
+
+post_data:
+   path: /data/post_add
+   controller: App\Controller\DataController::post_add
+
+upd:
+   path: /data/upd/{id}
+   controller: App\Controller\DataController::upd
+
+del:
+   path: /data/dell/{id}
+   controller: App\Controller\DataController::del
